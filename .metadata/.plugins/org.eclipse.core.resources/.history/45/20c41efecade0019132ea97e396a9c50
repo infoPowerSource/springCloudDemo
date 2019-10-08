@@ -1,0 +1,13 @@
+package com.infops;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class RmsUserConsumerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(RmsUserConsumerApplication.class, args);
+	}
+
+}

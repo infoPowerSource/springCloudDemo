@@ -1,0 +1,13 @@
+package com.infops;
+
+
+
+@SpringBootApplication
+@EnableDiscoveryClient
+public class RmsUserProvideApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(RmsUserProvideApplication.class, args);
+	}
+
+}

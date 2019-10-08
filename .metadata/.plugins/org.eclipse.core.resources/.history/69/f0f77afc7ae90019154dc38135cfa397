@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: rms-gateway-zuul
+server:
+  port: 7600
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:7776/eureka/
+zuul:
+  routes:
+    rms-user-consumer: /user/**
+      

@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: rms-user-provide
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7776/eureka
+      

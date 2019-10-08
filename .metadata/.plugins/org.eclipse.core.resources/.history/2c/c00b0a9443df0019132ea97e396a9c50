@@ -1,0 +1,5 @@
+package com.infops.model;
+
+public class User {
+
+}

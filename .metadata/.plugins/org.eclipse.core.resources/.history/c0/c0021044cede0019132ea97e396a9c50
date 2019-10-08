@@ -1,0 +1,5 @@
+package com.infops.controller;
+
+public interface UserFeignClient {
+
+}

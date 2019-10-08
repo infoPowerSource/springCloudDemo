@@ -1,0 +1,24 @@
+package com.infops.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.infops.service.UserFeignClient;
+
+@RestController
+public class LoginController {
+	@Autowired
+	private UserFeignClient userFeignClient;
+	
+	@RequestMapping("/userLogin")
+	public String login() {
+		return "收到结果"+userFeignClient.login();
+	}
+	
+	@RequestMapping("/userLogin")
+	public String login(@RequestParam("name") String name,@RequestParam("pwd") String pwd) {
+		return "收到结果"+userFeignClient.login(name,pwd);
+	}
+}

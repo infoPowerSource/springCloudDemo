@@ -1,0 +1,14 @@
+package com.infops.service.fallback;
+
+import com.infops.model.User;
+import com.infops.service.UserFeignClient;
+
+public class UserFeignClientFallback implements UserFeignClient {
+
+	@Override
+	public boolean login(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

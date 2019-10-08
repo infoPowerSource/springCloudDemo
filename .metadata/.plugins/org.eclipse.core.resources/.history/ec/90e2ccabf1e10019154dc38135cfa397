@@ -1,0 +1,29 @@
+package com.infops.service;
+
+import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.infops.config.SybnHystrixFeignConfiguration;
+import com.infops.model.User;
+import com.infops.service.fallback.UserFeignClientFallback;
+
+@FeignClient(name="rms-user-provide",fallback = UserFeignClientFallback.class)
+public interface UserFeignClient {
+	
+//	@RequestMapping(value="/login",method=RequestMethod.POST) 
+//	public String login();
+	
+    
+//    @RequestMapping(value="/login",method=RequestMethod.POST)
+//	public boolean login(@RequestParam("name") String name,@RequestParam("pwd") String pwd);
+    
+	/*
+	 * @RequestMapping(value="/login",method=RequestMethod.POST) public boolean
+	 * login(@RequestBody User user);
+	 */
+    
+    @RequestMapping(value="/login",method=RequestMethod.POST)
+   	public String login(@RequestBody User user);
+}

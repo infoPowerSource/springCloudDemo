@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="rms-user-provide"/>
+<aop-project name="rms-user-consumer"/>
+<aop-project name="rms-eureka-server"/>
+</aop-reference-model>

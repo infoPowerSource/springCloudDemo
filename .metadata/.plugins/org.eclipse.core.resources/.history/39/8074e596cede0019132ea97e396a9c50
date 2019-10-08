@@ -1,0 +1,9 @@
+package com.infops.controller;
+
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.netflix.feign.FeignClient;
+
+@FeignClient(name="rms-user-provide")
+public interface UserFeignClient {
+
+}

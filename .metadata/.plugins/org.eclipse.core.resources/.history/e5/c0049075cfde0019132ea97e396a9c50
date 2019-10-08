@@ -1,0 +1,12 @@
+package com.infops.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.infops.service.UserFeignClient;
+
+@RestController
+public class LoginController {
+	@Autowired
+	private UserFeignClient userFeignClient;
+}

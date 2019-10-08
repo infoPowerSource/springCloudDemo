@@ -1,0 +1,15 @@
+package com.infops;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+@SpringBootApplication
+@EnableDiscoveryClient
+public class RmsUserConsumerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(RmsUserConsumerApplication.class, args);
+	}
+
+}

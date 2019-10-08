@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\workSpace-product\workSpace-rms-new\springCloud-rms\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2437100777.index
+\rms-eureka-server\src\main\java
